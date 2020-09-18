@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  background-color: rosybrown;
+  background: url("./banner.jpg");
+  height: 100vh;
+}
+
+h1 {
+  color: red;
+  margin-left: 35%;
+}
+
+.hello {
+  color: indigo;
+}
