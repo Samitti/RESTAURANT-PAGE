@@ -1,34 +1,33 @@
-import "./style.css";
+import './style.css';
 import {
-    homeModule,
-} from "./home.js";
+    home_page,
+} from './home.js';
+import {
+    initialLoad,
+} from './initial_load.js';
+import {
+    contact_page,
+} from './contact.js';
+import {
+    menu_page,
+} from './menu.js';
+
 // import Banner from "./banner.jpg";
 
 function component() {
-    const element = document.createElement("div");
-    const heading = document.createElement("h1");
-    const button = document.createElement("button");
-
-    button.innerHTML = "Click";
-    button.classList.add("btn");
-    heading.innerHTML = "Welcome to Eritrean Restaurant.";
-    heading.classList.add("heading");
-    element.classList.add("hello");
-    element.appendChild(heading);
-    element.appendChild(button);
-
-    //Add the image to our existing div.
+    // Add the image to our existing div.
     //   const myBanner = new Image();
     //   myBanner.src = Banner;
 
     //   element.appendChild(myBanner);
 
-    button.onclick = () => {
-        homeModule.changeTitle();
-    };
 
-    return element;
+    const init = initialLoad.initialLoadMmethod();
+    return init;
 }
+initialLoad.button.onclick = () => {
+    alert("hiiiii");
+};
 
 
 document.body.appendChild(component());

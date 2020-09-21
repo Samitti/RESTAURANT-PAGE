@@ -1,13 +1,13 @@
-const homeModule = (function () {
-    const changeTitle = () => {
-        alert('this is changed')
+const home_page = (function () {
+    const home_page_method = () => {
+        return "home_page";
     };
 
     return {
-        changeTitle,
+        home_page_method,
     };
-}());
+})();
 
 export {
-    homeModule,
+    home_page
 };
