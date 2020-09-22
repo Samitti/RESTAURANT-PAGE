@@ -19,7 +19,7 @@ const homePage = (function () {
     initialLoad.homeButton.style.backgroundColor = '#351c1c';
 
     heading.innerHTML = 'Welcome To Eri Restaurant.';
-    textCont.innerHTML = 'Welcome to Eritrean restaurant, where you can find the most deliceos Eritrean traditional food. ';
+    textCont.innerHTML = 'Welcome to Eritrean restaurant, where you can find the most delicious Eritrean traditional food. ';
 
     return homeCont;
   };
