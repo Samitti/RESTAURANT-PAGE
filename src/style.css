@@ -3,21 +3,110 @@
     margin: 0;
 }
 
-.hello {
-    color: indigo;
-    background: url("./banner.jpg");
-    height: 120vh;
-    padding-top: 10px;
+.container {
+    /* background: url("./banner.jpg"); */
+    height: 100vh;
+    background-color: thistle;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+.logoDiv {
+    width: 500px;
+}
+
+.menuBar {
+    width: 470px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;   
+    
 }
 
 .heading {
     font-size: 50px;
+    color: #fbfbfb;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-color: red;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.pageContetnt {
+    height: 100%;    
+}
+
+.homeCont {
+    height: 100%;
+    margin-left: 22%;
+    margin-right: 26%;
+    margin-top: 13%;
+    padding-left: 10%;
+    
+}
+
+.homeHeading {
+    color: #351c1c;
+    margin-left: 12%;
+}
+
+.textCont {
+    margin-top: 10px;
+    padding: 10px;
+    color: #332a2a;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menuCont {
+    height: 100%;
+    background-color: #351c1c;
+    padding-top: 50px;
+}
+
+.menuHeading {
+    margin-left: 10%;
     color: white;
-    margin-left: 25%;
-    margin-top: 5%;
+}
+
+.contactCont {
+    height: 100%;
+    background-color: #351c1c;
 }
 
 .btn {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background: none;
     background-color: red;
     border: none;
+}
+
+.btnActive {
+    background-color: #351c1c;
+}
+
+.menuCont, 
+.contactCont,
+.homeCont {
+    height: 100%;
+}
+
+.btn:active {
+  background-color: rgb(53, 28, 28);
+  transform: translateY(4px);
+}
+
+btn:checked {
+    background-color: #3b423b;
 }

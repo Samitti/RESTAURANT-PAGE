@@ -1,33 +1,31 @@
 import './style.css';
 import {
-    home_page,
-} from './home.js';
+  homePage,
+} from './home';
 import {
-    initialLoad,
-} from './initial_load.js';
+  initialLoad,
+} from './initial_load';
 import {
-    contact_page,
-} from './contact.js';
+  contactPage,
+} from './contact';
 import {
-    menu_page,
-} from './menu.js';
-
-// import Banner from "./banner.jpg";
+  menuPage,
+} from './menu';
 
 function component() {
-    // Add the image to our existing div.
-    //   const myBanner = new Image();
-    //   myBanner.src = Banner;
-
-    //   element.appendChild(myBanner);
-
-
-    const init = initialLoad.initialLoadMmethod();
-    return init;
+  const init = initialLoad.initialLoadMmethod();
+  return init;
 }
-initialLoad.button.onclick = () => {
-    alert("hiiiii");
-};
-
-
 document.body.appendChild(component());
+initialLoad.renderPage(homePage.homePageMethod());
+
+
+initialLoad.homeButton.onclick = () => {
+  initialLoad.renderPage(homePage.homePageMethod());
+};
+initialLoad.menuButton.onclick = () => {
+  initialLoad.renderPage(menuPage.menuPageMethod());
+};
+initialLoad.contactButton.onclick = () => {
+  initialLoad.renderPage(contactPage.contactPageMethod());
+};
