@@ -10,7 +10,7 @@ This a simple restaurant page using javascript from the odin project, where I us
 - Html,
 - Css
 
-[Live Demo Link](https://raw.githack.com/Samitti/Tic-Tac-Toe-Project/feature/index.html)
+[Live Demo Link](https://samitti.github.io/RESTAURANT-PAGE/)
 
 ## Getting Started
 
