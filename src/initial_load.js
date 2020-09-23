@@ -35,8 +35,7 @@ const initialLoad = (function () {
     menuButton.innerHTML = 'MENU';
     contactButton.innerHTML = 'CONTACT US';
     heading.innerHTML = 'Eritrean Restaurant.';
-    pageContetnt.innerHTML = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-    activeMenu.style.backgroundColor = '#351c1c';
+    activeMenu.style.backgroundColor = '#221e1e';
 
     return container;
   };

@@ -3,16 +3,26 @@
     margin: 0;
 }
 
+body {
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+}
+
 .container {
+    background: url("./yy.jpg");
     /* background: url("./banner.jpg"); */
-    height: 100vh;
+    /* height: 100vh; */
     background-color: thistle;
+    height: 100vh;
 }
 
 .navBar {
     display: flex;
     justify-content: space-between;
-    width: 100%;    
+    width: 100%;
 }
 
 .logoDiv {
@@ -24,8 +34,7 @@
     /* border: 2px solid green; */
     display: flex;
     flex-direction: row;
-    align-items: flex-end;   
-    
+    align-items: flex-end;
 }
 
 .heading {
@@ -38,46 +47,79 @@
     padding-bottom: 5px;
 }
 
-.pageContetnt {
-    height: 100%;    
-}
+/* .pageContetnt {
+   height: 100vh; 
+} */
 
 .homeCont {
     height: 100%;
     margin-left: 22%;
     margin-right: 26%;
-    margin-top: 13%;
+    margin-top: 14%;
     padding-left: 10%;
-    
+    text-align: center;   
 }
 
 .homeHeading {
-    color: #351c1c;
-    margin-left: 12%;
+    color: #ffffff;
+    /* color: #351c1c; */
+    /* margin-left: 12%; */
 }
 
 .textCont {
     margin-top: 10px;
     padding: 10px;
-    color: #332a2a;
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 25px;
     text-align: center;
 }
 
 .menuCont {
     height: 100%;
-    background-color: #351c1c;
-    padding-top: 50px;
+    background-color: #221e1e;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
 }
 
-.menuHeading {
-    margin-left: 10%;
+.menuHeading,
+.contactHeading {
+    text-align: center;
     color: white;
+    margin-bottom: 50px;
+}
+
+.menuList {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.listItem {
+    height: 250px;
+    width: 300px;
+    /* background-color: yellow; */
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.listImage {    
+    width: 95%;
+    height: 80%;
+    /* background: url("./4.png"); */
+    background-repeat: no-repeat;
 }
 
 .contactCont {
     height: 100%;
-    background-color: #351c1c;
+    background-color: #221e1e;
+    padding: 50px;
+    text-align: center;
+}
+
+.contactList {
+    color: yellow;
+    font-size: 30px;    
 }
 
 .btn {
@@ -93,7 +135,7 @@
 }
 
 .btnActive {
-    background-color: #351c1c;
+    background-color: #221e1e;
 }
 
 .menuCont, 
@@ -103,10 +145,6 @@
 }
 
 .btn:active {
-  background-color: rgb(53, 28, 28);
+  background-color: 221e1e;
   transform: translateY(4px);
-}
-
-btn:checked {
-    background-color: #3b423b;
 }
