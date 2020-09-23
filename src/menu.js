@@ -11,6 +11,7 @@ import Menu7 from './7.png';
 import Menu8 from './8.png';
 
 
+// eslint-disable-next-line func-names
 const menuPage = (function () {
   const menuCont = document.createElement('div');
   const menuHeading = document.createElement('h1');
@@ -26,21 +27,21 @@ const menuPage = (function () {
     menuCont.appendChild(menuHeading);
     menuCont.appendChild(menuList);
     imageArr.push(Menu1);
-    dishArr.push('Bebaynetu Nay Xom');
+    dishArr.push('Bebaynetu Nay Xom  $10');
     imageArr.push(Menu2);
-    dishArr.push('Bebaynetu Nay Fisg');
+    dishArr.push('Bebaynetu Nay Fisg  $15');
     imageArr.push(Menu3);
-    dishArr.push('Kitfo');
+    dishArr.push('Kitfo $17');
     imageArr.push(Menu4);
-    dishArr.push('Tibs');
+    dishArr.push('Tibs $15');
     imageArr.push(Menu5);
-    dishArr.push('Zihla');
+    dishArr.push('Zihla $20');
     imageArr.push(Menu6);
-    dishArr.push('Geaat');
+    dishArr.push('Geaat $10');
     imageArr.push(Menu7);
-    dishArr.push('Shekla Tibs');
+    dishArr.push('Shekla Tibs $20');
     imageArr.push(Menu8);
-    dishArr.push('Dorho');
+    dishArr.push('Dorho $17');
     initialLoad.activeMenu.style.backgroundColor = 'red';
     initialLoad.activeMenu = initialLoad.menuButton;
     initialLoad.menuButton.style.backgroundColor = '#221e1e';
@@ -49,7 +50,6 @@ const menuPage = (function () {
     menuList.innerHTML = '';
 
     for (let i = 0; i < 8; i += 1) {
-      // Add the image to our existing div.
       const myMenu = new Image();
       myMenu.src = imageArr[i];
 
@@ -57,12 +57,9 @@ const menuPage = (function () {
       const listImage = document.createElement('img');
       const listCaption = document.createElement('p');
 
-      // listImage.appendChild(imageMenu);
-      // listImage.setAttribute("src", "4.png");
       listCaption.innerHTML = dishArr[i];
       listItem.appendChild(myMenu);
       listItem.appendChild(listCaption);
-
 
       listItem.classList.add('listItem');
       listImage.classList.add('listImage');
@@ -80,5 +77,6 @@ const menuPage = (function () {
 }());
 
 export {
+  // eslint-disable-next-line import/prefer-default-export
   menuPage,
 };

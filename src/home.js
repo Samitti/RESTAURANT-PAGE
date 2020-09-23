@@ -2,6 +2,7 @@ import {
   initialLoad,
 } from './initial_load';
 
+// eslint-disable-next-line func-names
 const homePage = (function () {
   const homeCont = document.createElement('div');
   const heading = document.createElement('h1');
@@ -29,5 +30,6 @@ const homePage = (function () {
 }());
 
 export {
+  // eslint-disable-next-line import/prefer-default-export
   homePage,
 };

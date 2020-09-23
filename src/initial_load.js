@@ -1,3 +1,4 @@
+// eslint-disable-next-line func-names
 const initialLoad = (function () {
   const container = document.createElement('div');
   const navBar = document.createElement('div');
@@ -55,4 +56,5 @@ const initialLoad = (function () {
   };
 }());
 
+// eslint-disable-next-line import/prefer-default-export
 export { initialLoad };

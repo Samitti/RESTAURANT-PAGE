@@ -1,7 +1,8 @@
 import {
-    initialLoad,
-  } from './initial_load';
+  initialLoad,
+} from './initial_load';
 
+// eslint-disable-next-line func-names
 const contactPage = (function () {
   const contactCont = document.createElement('div');
   const contactHeading = document.createElement('h1');
@@ -15,7 +16,6 @@ const contactPage = (function () {
     contactCont.appendChild(contactList2);
     contactCont.appendChild(contactList3);
 
-
     contactCont.classList.add('contactCont');
     contactHeading.classList.add('contactHeading');
     contactList1.classList.add('contactList');
@@ -26,9 +26,9 @@ const contactPage = (function () {
     initialLoad.contactButton.style.backgroundColor = '#221e1e';
 
     contactHeading.innerHTML = 'Please Contact Us:';
-    contactList1.innerHTML = "123 Fake Fake Address, Asmara Eritrea. ";
-    contactList2.innerHTML = "Call +29177756155";
-    contactList3.innerHTML = "Email eri_restaurant@gmail.com";
+    contactList1.innerHTML = '123 Fake Fake Address, Asmara Eritrea. ';
+    contactList2.innerHTML = 'Call +29177756155';
+    contactList3.innerHTML = 'Email eri_restaurant@gmail.com';
 
     return contactCont;
   };
@@ -39,5 +39,6 @@ const contactPage = (function () {
 }());
 
 export {
+  // eslint-disable-next-line import/prefer-default-export
   contactPage,
 };
