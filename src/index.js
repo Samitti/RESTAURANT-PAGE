@@ -17,15 +17,15 @@ function component() {
   return init;
 }
 document.body.appendChild(component());
-initialLoad.renderPage(homePage.homePageMethod());
+initialLoad.renderPage(homePage());
 
 
 initialLoad.homeButton.onclick = () => {
-  initialLoad.renderPage(homePage.homePageMethod());
+  initialLoad.renderPage(homePage());
 };
 initialLoad.menuButton.onclick = () => {
-  initialLoad.renderPage(menuPage.menuPageMethod());
+  initialLoad.renderPage(menuPage());
 };
 initialLoad.contactButton.onclick = () => {
-  initialLoad.renderPage(contactPage.contactPageMethod());
+  initialLoad.renderPage(contactPage());
 };
